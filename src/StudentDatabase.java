@@ -52,7 +52,4 @@ public class StudentDatabase {
         System.out.println("Student ID: " + student.getStudentId());
     }
 
-    public boolean isEligibleForScholarship(Student student) {
-        return student.getEspb() >= 48;
-    }
 }

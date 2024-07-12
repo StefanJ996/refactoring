@@ -49,4 +49,8 @@ public class Student {
     public void setEspb(int espb) {
         this.espb = espb;
     }
+
+    public boolean isEligibleForScholarship() {
+        return getEspb() >= 48;
+    }
 }
