@@ -18,7 +18,8 @@ public class MainProcess {
 
         System.out.println(studentDatabase.isEligibleForScholarship(student2));
 
-        System.out.println("Print student name " + studentDatabase.findStudent("180/18").getName());
+        String name = studentDatabase.findStudent("180/18").getName();
+        System.out.println("Print student name " + name);
 
         studentDatabase.printStudentDetails("200/20");    }
 }
