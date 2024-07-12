@@ -36,10 +36,10 @@ public class StudentDatabase {
         }
     }
 
-    public void printStudentDetails(String studentId) {
-        Student student = findStudent(studentId);
-        if (student != null)
-            printStudentInfo(student);
+    public void printStudentDetails(String studentId)
+    {
+        if (findStudent(studentId) != null)
+            printStudentInfo(findStudent(studentId));
         else {
             System.out.println("Student not found");
         }
