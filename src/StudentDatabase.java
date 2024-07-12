@@ -38,14 +38,18 @@ public class StudentDatabase {
 
     public void printStudentDetails(String studentId) {
         Student student = findStudent(studentId);
-        if (student != null) {
-            System.out.println("Student Details:");
-            System.out.println("Name: " + student.getName());
-            System.out.println("Age: " + student.getAge());
-            System.out.println("Student ID: " + student.getStudentId());
-        } else {
+        if (student != null)
+            extracted(student);
+        else {
             System.out.println("Student not found");
         }
+    }
+
+    private void extracted(Student student) {
+        System.out.println("Student Details:");
+        System.out.println("Name: " + student.getName());
+        System.out.println("Age: " + student.getAge());
+        System.out.println("Student ID: " + student.getStudentId());
     }
 
     public boolean isEligibleForScholarship(Student student) {
