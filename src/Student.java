@@ -1,21 +1,52 @@
 public class Student {
-    public String name;
-    public int age;
-    public String studentId;
-    public int espb;
+    private String name;
+    private int age;
+    private String studentId;
+    private int espb;
 
     public Student(String name, int age, String studentId, int espb) {
-        this.name = name;
-        this.age = age;
-        this.studentId = studentId;
-        this.espb = espb;
+        this.setName(name);
+        this.setAge(age);
+        this.setStudentId(studentId);
+        this.setEspb(espb);
     }
 
     public boolean isAdult() {
-        if (age >= 18) {
+        if (getAge() >= 18) {
             return true;
         }
         return false;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
+    public int getEspb() {
+        return espb;
+    }
+
+    public void setEspb(int espb) {
+        this.espb = espb;
+    }
 }
