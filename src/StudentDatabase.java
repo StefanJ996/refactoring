@@ -39,13 +39,13 @@ public class StudentDatabase {
     public void printStudentDetails(String studentId) {
         Student student = findStudent(studentId);
         if (student != null)
-            extracted(student);
+            printStudentInfo(student);
         else {
             System.out.println("Student not found");
         }
     }
 
-    private void extracted(Student student) {
+    private void printStudentInfo(Student student) {
         System.out.println("Student Details:");
         System.out.println("Name: " + student.getName());
         System.out.println("Age: " + student.getAge());
